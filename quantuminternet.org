@@ -1,0 +1,19 @@
+#+OPTIONS: H:2 toc:t ^:nil tags:t f:t
+#+AUTHOR: Yusheng Zhao
+#+EMAIL: yusheng.zhao@stonybrook.edu
+#+DATE: \today
+#+TITLE: Quantum Internet
+#+SUBTITLE: ???
+#+Description: A brief discussion of quantum internet
+#+BEAMER_THEME: Berlin
+#+BEAMER_FONT_THEME: professionalfonts
+#+startup: beamer
+#+LATEX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [presentation, smaller]
+#+LATEX_HEADER: \usepackage{braket}
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+* Intro
+* Part 1
+* Part 2
+* Part 3
+* Ending
