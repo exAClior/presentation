@@ -1,9 +1,9 @@
 #+OPTIONS: H:2 toc:t ^:nil tags:t f:t
-#+AUTHOR: Yusheng Zhao
+#+AUTHOR: Ben Wu, Chase Wallace, Yusheng Zhao 
 #+EMAIL: yusheng.zhao@stonybrook.edu
 #+DATE: \today
 #+TITLE: Quantum Internet
-#+SUBTITLE: ???
+#+SUBTITLE: Back before Aug. 6, 1991
 #+Description: A brief discussion of quantum internet
 #+BEAMER_THEME: Berlin
 #+BEAMER_FONT_THEME: professionalfonts
@@ -12,8 +12,57 @@
 #+LATEX_CLASS_OPTIONS: [presentation, smaller]
 #+LATEX_HEADER: \usepackage{braket}
 #+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
-* Intro
-* Part 1
-* Part 2
-* Part 3
-* Ending
+* Why Quantum Internet?
+** Applications: broadly speaking cite:Wehner2018
+   #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+   [[./usage.jpg]]
+** Components:
+*** List                                                              :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.4
+    :END:
+   - Quantum Node
+   - Quantum Channel
+   - Quantum Repeater (WiFi Extender)
+   - Switch
+*** Diagram                                                   cite:Wehner2018        :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.6
+    :END:
+    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+    [[./components.jpg]]
+** Advantage of Quantum Channel  cite:Kimble2008
+   - Quantum Channel provides exponential increase in computational dimension
+   - $k 2^n$ to $2^{kn}$ when we connect k n-bit quantum nodes
+   - Help to alleviate scaling and error-correlation problem
+   - Simulation of evolution of quantum many-body system
+   - "Spin-Spin" interaction of atoms simulated by quantum channel
+   - Help to solve the problem of percolation
+   - I.e can the liquid flow from the top of a cube to the bottom. When the cube has a cheese (Tom
+     and Jerry type of cheese)like internal structure but some of the paths are blocked with
+     probability p. [fn:1]
+** Focus of this presentation: Quantum Channel
+   - Coupling of single photons and atoms w/ help of cavity QED
+   - Difficulty arises b/c photon-photon interaction cross-sections are tiny, i.e very unlikely to occur
+   - Quantum Information processing with atomic ensemble
+* Cavity QED: Quick and Dirty
+* Application: Single-Photon Generation
+* DLCZ protocol
+* To the general case
+* Quantum Repeater
+  - Your Input needed
+  - Ben and Chase plz help
+* Conclusion: Challenges and Outlooks
+  
+
+* References                                                        :B_frame:
+ :PROPERTIES:
+ :BEAMER_opt: allowframebreaks,label=
+ :BEAMER_env: frame
+ :END:
+ bibliographystyle:unsrt
+ bibliography:~/presentation/mypres.bib
+
+* Footnotes
+
+[fn:1]  [[https://en.wikipedia.org/wiki/Percolation_theory][Percolation Theory from Wikipedia]] 
