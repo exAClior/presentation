@@ -66,7 +66,72 @@
    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
    [[./channelExample.png]]
 * Cavity QED: Quick and Dirty
-* Application: Single-Photon Generation
+** Terms [fn:2]cite:Kimble2008
+   - $V_m$: mode volume, approximately the volume of resonator, defines spatial
+     confinement. *Debated definition*
+   - Quality factor: roughly defines how long the light lives in the cavity
+   - $\vec{\epsilon}$: polarization vector
+   - $\vec{\mu_0}$: transition dipole moment, how strong does the atom feel a EM wave with certain
+     polarization
+   - $g = \sqrt{\frac{|\vec{\epsilon}\cdot \vec{\mu_0}|^2 \omega_C}{2\hbar \epsilon_0 V_m}}$
+   - $\gamma$: atomic decay rate to modes other than the cavity mode
+   - $\kappa$: decay rate of cavity mode
+   - $n_0 \approx \gamma^2/g^2$: photons required to saturate the intracavity atom
+   - $N_0 \approx \kappa \gamma /g^2$: number of atoms required to have appreciable effect on
+     intracavity field
+** Illustration
+   #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+   [[./cavityResonator.png]]
+** Strong Coupling regime cite:Kimble2008
+   - Require $(N_0,n_0) << 1$
+   - Could achieve in microwave domain with a Rydberg atom and a high Q superconducting cavity
+   - In optical domain: use high-finesse optical resonator and atomic transition with large
+     $\vec{\mu_0}$ [fn:3]
+   - Better confinement of atom will also help, it reduces $V_m$
+** Progress
+   #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+   [[./progress.png]]
+* Application: Single-Photon Generation on Demand and Reverse
+** How we send bits classically
+   - OK, it's a diagress, watch yourself if interested
+   - [[https://youtu.be/ZhEf7e4kopM][Video, watch it!]]
+** Illustration
+   #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+   [[./darkstateprocess.png]]
+   
+** How we do it
+   
+   - Mathematically $\ket{a}\ket{0} \leftrightarrow \ket{b}\ket{1}$
+   - Notation is $\ket{\psi_{atom}} \ket{\phi_{Fock}}$
+   - Dark State $\ket{D} = cos\theta\ket{a}\ket{0} + sin\theta\ket{b}\ket{1}$
+   - $cos\theta = [1+\frac{\Omega(t)^2}{g^2}]^{-1/2}$
+   - Need to modify $\Omega(t)$ adibatically for *coherent absorption and creation of photon*? 
+   - Intermediate transition $\ket{b} \rightarrow \ket{e}$ stongly coupled to a mode of optical cavity of
+     energy $\hbar g$
+ 
+     
+** Importance
+*** Words                                                             :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.4
+    :END:
+    - Could serve as Quantum Memory
+    - Optical field as a superposition of 0 and 1 Fock state sent through fiber
+    - Use the control field $\Omega(t)$ to store the superposition information into atoms
+*** Illus                                                             :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.6
+    :END:
+    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+    [[./QuantumMemory.png]]
+** Extend to have entanglement cite:Kimble2008
+   - Allow the control field to have different polarization over time
+   - May entangle the state of atom with the polarization state of a flying photon call it $p_1$
+   - $p_1$ is not emitted by the atom, you are just entangling it with the atom, could have came
+     from the emission process of another atom, thus having the state info of that atom.
+   - Apply another control field to disentangle the atom with $p_1$ and emit another photon $p_2$
+     which is in turn entangled with $p_1$
+   - No pics :(, the source file does not allow access, fuck
 * DLCZ protocol
 * To the general case
 * Quantum Repeater
@@ -84,5 +149,9 @@
  bibliography:~/presentation/mypres.bib
 
 * Footnotes
+
+[fn:3] [[https://www.rp-photonics.com/finesse.html][Finesse]] 
+
+[fn:2]  [[https://www.linkedin.com/pulse/optical-mode-volume-where-does-come-from-jakob-rosenkrantz-de-lasson][Mode Volume and Quality Factor]] 
 
 [fn:1]  [[https://en.wikipedia.org/wiki/Percolation_theory][Percolation Theory from Wikipedia]] 
