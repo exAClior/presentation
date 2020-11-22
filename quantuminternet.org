@@ -11,6 +11,7 @@
 #+LATEX_CLASS: beamer
 #+LATEX_CLASS_OPTIONS: [presentation, smaller]
 #+LATEX_HEADER: \usepackage{braket}
+#+LATEX_HEADER: \usepackage{amsmath}
 #+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
 * Why Quantum Internet?
 ** Applications: broadly speaking cite:Wehner2018
@@ -45,6 +46,25 @@
    - Coupling of single photons and atoms w/ help of cavity QED
    - Difficulty arises b/c photon-photon interaction cross-sections are tiny, i.e very unlikely to occur
    - Quantum Information processing with atomic ensemble
+** Requirements for Physical Realization cite:Kimble2008
+*** Points                                                            :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.4
+    :END:
+   - Interaction between light and matter should be easily tunable
+   - Done through an interaction Hamiltonian $<H_{int}(t)> \approx \hbar \chi(t)$
+   - Physical processes that controls $\Chi(t)$ need to be robust in the face of *imperfections*?
+   - Mistakes can be efficiently detected and fixed
+   - Mathematically : $\chi >> \kappa >> \gamma$
+*** Graph                                                             :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.6
+    :END:
+    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+    [[./interface.png]]
+** Realization Examples cite:Kimble2008
+   #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+   [[./channelExample.png]]
 * Cavity QED: Quick and Dirty
 * Application: Single-Photon Generation
 * DLCZ protocol
