@@ -133,12 +133,45 @@
      which is in turn entangled with $p_1$
    - No pics :(, the source file does not allow access, fuck
 * DLCZ protocol
-* To the general case
+** What is it?
+   - Protocol to distribute coherence and entanglement in the discrete variable regime.
+   - $\ket{\phi_{a,1}} = \ket{0_a} \ket{0_1} + e^{i\beta} \sqrt{p}\ket{1_a}\ket{1_1} +\mathcal{O}(p)$
+   - $\ket{1_a} = \frac{1}{\sqrt{N_a}}\sum_{i=1}^{N_a} \ket{g_1} ... \ket{s_i} ... \ket{g_{N_a}}$
+   - Note the sharing of this 'spin up' property, we have entanglement amongst all $N_a$ qubits
+** Illustration
+   #+Attr_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+   [[./DLCZ.png]]
+** Create entangled pair of ensembles  
+*** Words                                                             :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.4
+    :END:
+   - Combine the two ensemble of entangled atoms
+   - $\ket{\Psi_{L,R}} = \frac{1}{\sqrt{2}} [ \ket{0_a}_L \ket{1_a}_R \pm e^{i\eta_1} \ket{1_a}_L
+     \ket{0_a}_R]$
+   - Resilient to important sources of imperfections and loses in propagation and detection
+   - Created entanglement through measurement
+*** Illustration                                                      :BMCOL:
+    :PROPERTIES:
+    :BEAMER_col: 0.6
+    :END:
+    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+    [[./LR.png]]
+* Application of DLCZ in real-life
+** Very Briefly
+   - Network of quantum nodes need not and should not be bipartite
+   - How to create entanglement among N quantum nodes?
+   - How do we verify and quantify and entanglement between N parties.
+
 * Quantum Repeater
+** Just a little bit 
   - Your Input needed
   - Ben and Chase plz help
 * Conclusion: Challenges and Outlooks
-  
+** Could be the quantification of entanglement
+   - we talked about this in class, nice connection
+   - The other paper I referenced is much newer than the 2008 paper. Could see how progress was made
+     and say just a few words
 
 * References                                                        :B_frame:
  :PROPERTIES:
@@ -150,7 +183,7 @@
 
 * Footnotes
 
-[fn:3] [[https://www.rp-photonics.com/finesse.html][Finesse]] 
+[fn:3]  [[https://www.rp-photonics.com/finesse.html][Finesse]] 
 
 [fn:2]  [[https://www.linkedin.com/pulse/optical-mode-volume-where-does-come-from-jakob-rosenkrantz-de-lasson][Mode Volume and Quality Factor]] 
 
