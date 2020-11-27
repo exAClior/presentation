@@ -36,12 +36,12 @@
    - Quantum Channel provides exponential increase in computational dimension
    - $k 2^n$ to $2^{kn}$ when we connect k n-bit quantum nodes
    - Help to alleviate scaling and error-correlation problem
-   - Simulation of evolution of quantum many-body system
+   - Simulation of evolution of quantum many-body system (Remove-Chase)
    - "Spin-Spin" interaction of atoms simulated by quantum channel
    - Help to solve the problem of percolation
    - I.e can the liquid flow from the top of a cube to the bottom. When the cube has a cheese (Tom
      and Jerry type of cheese)like internal structure but some of the paths are blocked with
-     probability p. [fn:1]
+     probability p. [fn:1] (I'm not sure how the problem of percolation ties into the big picture-Chase)
 ** Focus of this presentation: Quantum Channel
    - Coupling of single photons and atoms w/ help of cavity QED
    - Difficulty arises b/c photon-photon interaction cross-sections are tiny, i.e very unlikely to occur
