@@ -1,4 +1,4 @@
-#+OPTIONS: H:2 toc:t ^:nil tags:t f:t
+#+OPTIONS: H:2 toc:t ^:nil tags:t f:t num:t
 #+AUTHOR: Ben Wu, Chase Wallace, Yusheng Zhao 
 #+EMAIL: yusheng.zhao@stonybrook.edu
 #+DATE: \today
