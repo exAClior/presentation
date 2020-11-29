@@ -36,19 +36,19 @@
    - Quantum Channel provides exponential increase in computational dimension
    - $k 2^n$ to $2^{kn}$ when we connect k n-bit quantum nodes
    - Help to alleviate scaling and error-correlation problem
-   - Simulation of evolution of quantum many-body system (Remove-Chase)
-   - "Spin-Spin" interaction of atoms simulated by quantum channel
-   - Help to solve the problem of percolation
+      - Simulation of evolution of quantum many-body system (Remove-Chase)
+      - "Spin-Spin" interaction of atoms simulated by quantum channel
+      - Help to solve the problem of percolation
 ** Percolation sidenote
-   - I.e can the liquid flow from the top of a cube to the bottom. When the cube has a cheese (Tom
-     and Jerry type of cheese)like internal structure but some of the paths are blocked with
+   - I.e can the liquid flow from the top of a cube to the bottom. When the cube has a Swiss cheese
+     like internal structure but some of the paths are blocked with
      probability p. [fn:1] 
 ** Focus of this presentation: Quantum Channel
-   - What we transmit is light, i.e photon
-   - What we use to store quantum states is atom
-   - Coupling of single photon and atom w/ help of cavity QED
-   - Difficulty arises b/c photon-photon interaction cross-sections are tiny, i.e very unlikely to occur
-   - Quantum Information processing with atomic ensemble
+   - Transmission of photons
+   - Use of atoms to store quantum states
+   - Coupling of a single photon and an atom w/ help of cavity QED
+   - Photon-photon interaction cross-sections are tiny, i.e very unlikely to occur
+   - Quantum Information processing with atomic ensembles
 ** Requirements for Physical Realization cite:Kimble2008
 *** Points                                                            :BMCOL:
     :PROPERTIES:
@@ -56,8 +56,8 @@
     :END:
    - Interaction between light and matter should be easily tunable
    - Done through an interaction Hamiltonian $<H_{int}(t)> \approx \hbar \chi(t)$
-   - Physical processes that controls $\chi(t)$ need to be robust in the face of imperfections?
-   - Mistakes can be efficiently detected and fixed
+   - Physical processes that controls $\chi(t)$ need to be robust in the face of imperfections (by adibatic transfer)
+   - Mistakes can be efficiently detected and fixed (with quantum error correction)
    - Mathematically : $\chi >> \kappa >> \gamma$
 *** Graph                                                             :BMCOL:
     :PROPERTIES:
