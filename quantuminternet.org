@@ -39,11 +39,14 @@
    - Simulation of evolution of quantum many-body system (Remove-Chase)
    - "Spin-Spin" interaction of atoms simulated by quantum channel
    - Help to solve the problem of percolation
+** Percolation sidenote
    - I.e can the liquid flow from the top of a cube to the bottom. When the cube has a cheese (Tom
      and Jerry type of cheese)like internal structure but some of the paths are blocked with
-     probability p. [fn:1] (I'm not sure how the problem of percolation ties into the big picture-Chase)
+     probability p. [fn:1] 
 ** Focus of this presentation: Quantum Channel
-   - Coupling of single photons and atoms w/ help of cavity QED
+   - What we transmit is light, i.e photon
+   - What we use to store quantum states is atom
+   - Coupling of single photon and atom w/ help of cavity QED
    - Difficulty arises b/c photon-photon interaction cross-sections are tiny, i.e very unlikely to occur
    - Quantum Information processing with atomic ensemble
 ** Requirements for Physical Realization cite:Kimble2008
@@ -53,7 +56,7 @@
     :END:
    - Interaction between light and matter should be easily tunable
    - Done through an interaction Hamiltonian $<H_{int}(t)> \approx \hbar \chi(t)$
-   - Physical processes that controls $\Chi(t)$ need to be robust in the face of *imperfections*?
+   - Physical processes that controls $\chi(t)$ need to be robust in the face of imperfections?
    - Mistakes can be efficiently detected and fixed
    - Mathematically : $\chi >> \kappa >> \gamma$
 *** Graph                                                             :BMCOL:
@@ -63,8 +66,9 @@
     #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
     [[./interface.png]]
 ** Realization Examples cite:Kimble2008
-   #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+   #+ATTR_LATEX: :width 0.8\textwidth :height 0.7\textheight  
    [[./channelExample.png]]
+   FabryPerot cavity
 * Cavity QED: Quick and Dirty
 ** Terms [fn:2]cite:Kimble2008
    - $V_m$: mode volume, approximately the volume of resonator, defines spatial
@@ -94,6 +98,8 @@
 * Application: Single-Photon Generation on Demand and Reverse
 ** How we send bits classically
    - OK, it's a diagress, watch yourself if interested
+   - Basically explains why we want a single photon to be sent
+   - Classically, we send a bunch of them to represent a classical bit
    - [[https://youtu.be/ZhEf7e4kopM][Video, watch it!]]
 ** Illustration
    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
@@ -131,7 +137,7 @@
      from the emission process of another atom, thus having the state info of that atom.
    - Apply another control field to disentangle the atom with $p_1$ and emit another photon $p_2$
      which is in turn entangled with $p_1$
-   - No pics :(, the source file does not allow access, fuck
+   - No pics :(, the source file does not allow access, darn
 * DLCZ protocol
 ** What is it?
    - Protocol to distribute coherence and entanglement in the discrete variable regime.
@@ -157,21 +163,18 @@
     :END:
     #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
     [[./LR.png]]
-* Application of DLCZ in real-life
-** Very Briefly
+** Extending entanglement for Quantum networks
    - Network of quantum nodes need not and should not be bipartite
    - How to create entanglement among N quantum nodes?
    - How do we verify and quantify and entanglement between N parties.
+   - "Does it work for a certain algorithm" is a good criteria?
 
-* Quantum Repeater
-** Just a little bit 
-  - Your Input needed
-  - Ben and Chase plz help
 * Conclusion: Challenges and Outlooks
-** Could be the quantification of entanglement
-   - we talked about this in class, nice connection
-   - The other paper I referenced is much newer than the 2008 paper. Could see how progress was made
-     and say just a few words
+** Outlooks
+   - New developments in how to make quantum channels and other parts more robust
+** Challenges 
+   - Quantification of entanglement between many entities
+   - Concurrence, negativity, and entropy of entanglement
 
 * References                                                        :B_frame:
  :PROPERTIES:
