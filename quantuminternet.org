@@ -18,7 +18,7 @@
    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
    [[./usage.jpg]]
 ** Components:
-*** List                                                              :BMCOL:
+*** Components                                                              :BMCOL:
     :PROPERTIES:
     :BEAMER_col: 0.4
     :END:
@@ -32,18 +32,18 @@
     :END:
     #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
     [[./components.jpg]]
-** Advantage of Quantum Channel  cite:Kimble2008
-   - Quantum Channel provides exponential increase in computational dimension
-   - $k 2^n$ to $2^{kn}$ when we connect k n-bit quantum nodes
-   - Help to alleviate scaling and error-correlation problem
-      - Simulation of evolution of quantum many-body system (Remove-Chase)
+** Advantages of a Quantum Channel  cite:Kimble2008
+   - A Quantum Channel provides an exponential increase in computational dimension
+      - $k 2^n$ to $2^{kn}$ when we connect k n-bit quantum nodes
+   - Helps to alleviate scaling and error-correlation problems
+      - Simulation of evolution of quantum many-body system
       - "Spin-Spin" interaction of atoms simulated by quantum channel
-      - Help to solve the problem of percolation
+      - Percolation problem
 ** Percolation sidenote
    - I.e can the liquid flow from the top of a cube to the bottom. When the cube has a Swiss cheese
      like internal structure but some of the paths are blocked with
      probability p. [fn:1] 
-** Focus of this presentation: Quantum Channel
+** Focus of This Presentation: Quantum Channels
    - Transmission of photons
    - Use of atoms to store quantum states
    - Coupling of a single photon and an atom w/ help of cavity QED
@@ -59,18 +59,18 @@
    - Physical processes that controls $\chi(t)$ need to be robust in the face of imperfections (by adibatic transfer)
    - Mistakes can be efficiently detected and fixed (with quantum error correction)
    - Mathematically : $\chi >> \kappa >> \gamma$
-*** Graph                                                             :BMCOL:
+*** Illustration                                                             :BMCOL:
     :PROPERTIES:
     :BEAMER_col: 0.6
     :END:
     #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
     [[./interface.png]]
-** Realization Examples cite:Kimble2008
+** Example cite:Kimble2008
    #+ATTR_LATEX: :width 0.8\textwidth :height 0.7\textheight  
    [[./channelExample.png]]
-   FabryPerot cavity
+   Fabry-Perot cavity
 * Cavity QED: Quick and Dirty
-** Terms [fn:2]cite:Kimble2008
+** Terms [fn:2] cite:Kimble2008
    - $V_m$: mode volume, approximately the volume of resonator, defines spatial
      confinement. *Debated definition*
    - Quality factor: roughly defines how long the light lives in the cavity
@@ -86,17 +86,17 @@
 ** Illustration
    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
    [[./cavityResonator.png]]
-** Strong Coupling regime cite:Kimble2008
-   - Require $(N_0,n_0) << 1$
-   - Could achieve in microwave domain with a Rydberg atom and a high Q superconducting cavity
-   - In optical domain: use high-finesse optical resonator and atomic transition with large
+** Strong Coupling Regime cite:Kimble2008
+   - Requires $(N_0,n_0) << 1$
+   - Could be achieved in the microwave domain with a Rydberg atom and a high Q superconducting cavity
+   - In the optical domain: uses a high-finesse optical resonator, and atomic transitions with large
      $\vec{\mu_0}$ [fn:3]
-   - Better confinement of atom will also help, it reduces $V_m$
+   - Better confinement of the atoms will also help (it reduces $V_m$)
 ** Progress
    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
    [[./progress.png]]
-* Application: Single-Photon Generation on Demand and Reverse
-** How we send bits classically
+* Application: Reversable Single-Photon Generation on Demand
+** How We Send Bits Classically
    - OK, it's a diagress, watch yourself if interested
    - Basically explains why we want a single photon to be sent
    - Classically, we send a bunch of them to represent a classical bit
@@ -105,69 +105,69 @@
    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
    [[./darkstateprocess.png]]
    
-** How we do it
+** How We Do It
    
    - Mathematically $\ket{a}\ket{0} \leftrightarrow \ket{b}\ket{1}$
    - Notation is $\ket{\psi_{atom}} \ket{\phi_{Fock}}$
    - Dark State $\ket{D} = cos\theta\ket{a}\ket{0} + sin\theta\ket{b}\ket{1}$
    - $cos\theta = [1+\frac{\Omega(t)^2}{g^2}]^{-1/2}$
-   - Need to modify $\Omega(t)$ adibatically for *coherent absorption and creation of photon*? 
+   - Need to modify $\Omega(t)$ adibatically, to coherently map the atomic state to the photon's state (and vice versa)
    - Intermediate transition $\ket{b} \rightarrow \ket{e}$ stongly coupled to a mode of optical cavity of
      energy $\hbar g$
  
      
 ** Importance
-*** Words                                                             :BMCOL:
+*** Importance                                                             :BMCOL:
     :PROPERTIES:
     :BEAMER_col: 0.4
     :END:
     - Could serve as Quantum Memory
     - Optical field as a superposition of 0 and 1 Fock state sent through fiber
-    - Use the control field $\Omega(t)$ to store the superposition information into atoms
-*** Illus                                                             :BMCOL:
+    - Use the control field $\Omega(t)$ to store the superposition information into the atoms
+*** Illustration                                                             :BMCOL:
     :PROPERTIES:
     :BEAMER_col: 0.6
     :END:
     #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
     [[./QuantumMemory.png]]
-** Extend to have entanglement cite:Kimble2008
+** Extended Entanglement cite:Kimble2008
    - Allow the control field to have different polarization over time
-   - May entangle the state of atom with the polarization state of a flying photon call it $p_1$
-   - $p_1$ is not emitted by the atom, you are just entangling it with the atom, could have came
+   - May entangle the state of atom with the polarization state of a flying photon, $p_1$
+   - $p_1$ is not emitted by the atom, just entangling it with the atom, could have came
      from the emission process of another atom, thus having the state info of that atom.
    - Apply another control field to disentangle the atom with $p_1$ and emit another photon $p_2$
      which is in turn entangled with $p_1$
-   - No pics :(, the source file does not allow access, darn
+   % - No pics :(, the source file does not allow access, darn
 * DLCZ protocol
-** What is it?
+** What Is It?
    - Protocol to distribute coherence and entanglement in the discrete variable regime.
    - $\ket{\phi_{a,1}} = \ket{0_a} \ket{0_1} + e^{i\beta} \sqrt{p}\ket{1_a}\ket{1_1} +\mathcal{O}(p)$
    - $\ket{1_a} = \frac{1}{\sqrt{N_a}}\sum_{i=1}^{N_a} \ket{g_1} ... \ket{s_i} ... \ket{g_{N_a}}$
-   - Note the sharing of this 'spin up' property, we have entanglement amongst all $N_a$ qubits
+   - Note; The sharing of this 'spin up' property gives entanglement amongst all $N_a$ qubits
 ** Illustration
    #+Attr_LATEX: :width 0.8\textwidth :height 0.8\textheight  
    [[./DLCZ.png]]
-** Create entangled pair of ensembles  
-*** Words                                                             :BMCOL:
+** Create an Entangled Pair of Ensembles  
+*** Creattion of an Entangled Pair of Ensembles                                                             :BMCOL:
     :PROPERTIES:
     :BEAMER_col: 0.4
     :END:
-   - Combine the two ensemble of entangled atoms
+   - Combine the two ensembles of entangled atoms
    - $\ket{\Psi_{L,R}} = \frac{1}{\sqrt{2}} [ \ket{0_a}_L \ket{1_a}_R \pm e^{i\eta_1} \ket{1_a}_L
      \ket{0_a}_R]$
    - Resilient to important sources of imperfections and loses in propagation and detection
-   - Created entanglement through measurement
+   - Creation of entanglement through measurement
 *** Illustration                                                      :BMCOL:
     :PROPERTIES:
     :BEAMER_col: 0.6
     :END:
     #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
     [[./LR.png]]
-** Extending entanglement for Quantum networks
-   - Network of quantum nodes need not and should not be bipartite
+** Extending Entanglement for Quantum Networks
+   - Network of quantum nodes need not and should not be bipartite.
    - How to create entanglement among N quantum nodes?
-   - How do we verify and quantify and entanglement between N parties.
-   - "Does it work for a certain algorithm" is a good criteria?
+   - How do we verify and quantify and entanglement between N parties?
+   - Is "Does it work for a certain algorithm" good criterium?
 
 * Conclusion: Challenges and Outlooks
 ** Outlooks
