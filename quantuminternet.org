@@ -58,12 +58,13 @@
    - Done through an interaction Hamiltonian $<H_{int}(t)> \approx \hbar \chi(t)$
    - Physical processes that controls $\chi(t)$ need to be robust in the face of imperfections (by adibatic transfer)
    - Mistakes can be efficiently detected and fixed (with quantum error correction)
-   - Mathematically : $\chi >> \kappa >> \gamma$
 *** Illustration                                                             :BMCOL:
     :PROPERTIES:
     :BEAMER_col: 0.6
     :END:
-    #+ATTR_LATEX: :width 0.8\textwidth :height 0.8\textheight  
+   - Mathematically : $\chi >> \kappa >> \gamma$
+
+    #+ATTR_LATEX: :width 0.8\textwidth :height 0.7\textheight  
     [[./interface.png]]
 ** Example cite:Kimble2008
    #+ATTR_LATEX: :width 0.8\textwidth :height 0.7\textheight  
